@@ -1,0 +1,6 @@
+image: debian:sid
+
+build_docker_image:
+    stage: build
+    script:
+        -   ./build
