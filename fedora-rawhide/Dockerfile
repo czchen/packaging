@@ -9,7 +9,7 @@ RUN dnf install --assumeyes \
         fedora-packager \
         git \
         rpmdevtools \
-    echo 'installed required packages'
+    && echo 'installed required packages'
 
 RUN /usr/sbin/useradd makerpm && \
     usermod -a -G mock makerpm && \
