@@ -5,13 +5,17 @@ import sys
 
 def build_docker_image(dockerfile):
     tag = 'packaging/' + dockerfile.split(os.path.sep)[-2]
-    os.system('docker build -t {} {}'.format(tag, os.path.dirname(dockerfile)))
+    status = os.system('docker build -t {} {}'.format(tag, os.path.dirname(dockerfile)))
+    if status:
+        sys.exit(-1)
 
 
 def main():
     workdir = os.path.abspath(os.path.dirname(__file__))
     for dockerfile in glob.glob(workdir + '/**/Dockerfile'):
         build_docker_image(dockerfile)
+
+    return 0
 
 
 if __name__ == '__main__':
