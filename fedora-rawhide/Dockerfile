@@ -3,4 +3,12 @@ FROM fedora:latest
 MAINTAINER ChangZhuo Chen (陳昌倬) <czchen@czchen.org>
 
 RUN dnf install --assumeyes \
-        git
+        @development-tools \
+        fedora-packager \
+        git \
+        rpmdevtools \
+    echo 'installed required packages'
+
+RUN /usr/sbin/useradd makerpm && \
+    usermod -a -G mock makerpm && \
+    su makerpm -c rpmdev-setuptree
