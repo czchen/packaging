@@ -1,3 +1,5 @@
+# https://fedoraproject.org/wiki/How_to_create_an_RPM_package
+
 FROM fedora:latest
 
 MAINTAINER ChangZhuo Chen (陳昌倬) <czchen@czchen.org>
