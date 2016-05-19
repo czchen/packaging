@@ -1,7 +1,8 @@
 image: debian:sid
 
 before_script:
-    -   apt install -yy python3
+    -   apt update
+    -   apt install -yy docker python3
 
 build_docker_image:
     stage: build
