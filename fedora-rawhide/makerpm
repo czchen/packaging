@@ -1,1 +1,1 @@
-makerpm ALL=(ALL) ALL NOPASSWD: ALL
+makerpm ALL=(ALL) NOPASSWD: ALL
