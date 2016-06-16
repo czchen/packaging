@@ -4,9 +4,9 @@ FROM ubuntu:16.04
 
 MAINTAINER ChangZhuo Chen (陳昌倬) <czchen@czchen.org>
 
-RUN apt-get update \
-    && apt-get install -y \
+RUN apt update \
+    && apt install -y \
         git \
         snapcraft \
         vim \
-    && apt-get clean
+    && apt clean
