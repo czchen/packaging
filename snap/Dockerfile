@@ -12,3 +12,5 @@ RUN apt update \
     && apt clean
 
 RUN mkdir -p /home/snap
+
+VOLUME ["/host"]

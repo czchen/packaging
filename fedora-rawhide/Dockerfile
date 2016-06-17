@@ -21,3 +21,5 @@ RUN /usr/sbin/useradd makerpm \
     && chmod 0400 /etc/sudoers.d/makerpm \
     && su makerpm -c rpmdev-setuptree \
     && echo 'create account makerpm'
+
+VOLUME ["/host"]
