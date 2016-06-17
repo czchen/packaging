@@ -1,4 +1,4 @@
-# https://fedoraproject.org/wiki/How_to_create_an_RPM_package
+# https://developer.ubuntu.com/en/snappy/build-apps/
 
 FROM ubuntu:16.04
 
