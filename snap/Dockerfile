@@ -10,3 +10,5 @@ RUN apt update \
         snapcraft \
         vim \
     && apt clean
+
+RUN mkdir -p /home/snap
